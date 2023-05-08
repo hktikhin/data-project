@@ -1,0 +1,3 @@
+ipykernel
+psysopg2
+pandas
