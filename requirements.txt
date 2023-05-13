@@ -1,3 +1,6 @@
 ipykernel
 psysopg2
 pandas
+requests 
+linkedin_api 
+python-dotenv
