@@ -10,7 +10,7 @@ This project demonstrates the following skills:
 
 # Architecture Diagram
 
-![Airflow Project Architecture Diagram](./architecture.png)
+![Airflow Project Architecture Diagram](./architecture.jpg)
 
 # Tool
 The following tools were used in this project:
