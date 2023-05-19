@@ -5,3 +5,5 @@ requests
 python-dotenv
 httpx
 selectolax
+s3fs
+apache-airflow
