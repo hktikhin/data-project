@@ -7,3 +7,4 @@ httpx
 selectolax
 s3fs
 apache-airflow
+boto3
