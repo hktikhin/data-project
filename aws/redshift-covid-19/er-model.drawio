@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram id="vQlv6r7HSN8hO-nmCaGo" name="Page-1">
+        <mxGraphModel dx="948" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="nytimes_data_in_usa_us_county" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="40" width="225" height="130" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="`date` string, &#10;  `county` string, &#10;  `state` string, &#10;  `fips` bigint, &#10;  `cases` bigint, &#10;  `deaths` bigint" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="2" vertex="1">
+                    <mxGeometry y="30" width="225" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="enigma_jhud" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="150" width="150" height="220" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="`fips` bigint, &#10;  `admin2` string, &#10;  `province_state` string, &#10;  `country_region` string, &#10;  `last_update` string, &#10;  `latitude` double, &#10;  `longitude` double, &#10;  `confirmed` bigint, &#10;  `deaths` bigint, &#10;  `recovered` bigint, &#10;  `active` string, &#10;  `combined_key` string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="5" vertex="1">
+                    <mxGeometry y="30" width="150" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="nytimes_data_in_usa_us_states" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="200" width="230" height="120" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="`date` string, &#10;  `state` string, &#10;  `fips` bigint, &#10;  `cases` bigint, &#10;  `deaths` bigint" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="7" vertex="1">
+                    <mxGeometry y="30" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="rearc_covid_19_testing_data_states_daily" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="460" width="300" height="830" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="`date` bigint, &#10;  `state` string, &#10;  `positive` bigint, &#10;  `probablecases` bigint, &#10;  `negative` bigint, &#10;  `pending` bigint, &#10;  `totaltestresultssource` string, &#10;  `totaltestresults` bigint, &#10;  `hospitalizedcurrently` bigint, &#10;  `hospitalizedcumulative` bigint, &#10;  `inicucurrently` bigint, &#10;  `inicucumulative` bigint, &#10;  `onventilatorcurrently` bigint, &#10;  `onventilatorcumulative` bigint, &#10;  `recovered` bigint, &#10;  `lastupdateet` string, &#10;  `datemodified` string, &#10;  `checktimeet` string, &#10;  `death` bigint, &#10;  `hospitalized` bigint, &#10;  `hospitalizeddischarged` bigint, &#10;  `datechecked` string, &#10;  `totaltestsviral` bigint, &#10;  `positivetestsviral` bigint, &#10;  `negativetestsviral` bigint, &#10;  `positivecasesviral` bigint, &#10;  `deathconfirmed` bigint, &#10;  `deathprobable` bigint, &#10;  `totaltestencountersviral` bigint, &#10;  `totaltestspeopleviral` bigint, &#10;  `totaltestsantibody` bigint, &#10;  `positivetestsantibody` bigint, &#10;  `negativetestsantibody` bigint, &#10;  `totaltestspeopleantibody` bigint, &#10;  `positivetestspeopleantibody` bigint, &#10;  `negativetestspeopleantibody` bigint, &#10;  `totaltestspeopleantigen` bigint, &#10;  `positivetestspeopleantigen` bigint, &#10;  `totaltestsantigen` bigint, &#10;  `positivetestsantigen` bigint, &#10;  `fips` bigint, &#10;  `positiveincrease` bigint, &#10;  `negativeincrease` bigint, &#10;  `total` bigint, &#10;  `totaltestresultsincrease` bigint, &#10;  `posneg` bigint, &#10;  `dataqualitygrade` string, &#10;  `deathincrease` bigint, &#10;  `hospitalizedincrease` bigint, &#10;  `hash` string, &#10;  `commercialscore` bigint, &#10;  `negativeregularscore` bigint, &#10;  `negativescore` bigint, &#10;  `positivescore` bigint, &#10;  `score` bigint, &#10;  `grade` string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="9" vertex="1">
+                    <mxGeometry y="30" width="300" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="rearc_covid_19_testing_data_us_daily" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="470" width="270" height="400" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="  `date` bigint, &#10;  `states` bigint, &#10;  `positive` bigint, &#10;  `negative` bigint, &#10;  `pending` bigint, &#10;  `hospitalizedcurrently` bigint, &#10;  `hospitalizedcumulative` bigint, &#10;  `inicucurrently` bigint, &#10;  `inicucumulative` bigint, &#10;  `onventilatorcurrently` bigint, &#10;  `onventilatorcumulative` bigint, &#10;  `datechecked` string, &#10;  `death` bigint, &#10;  `hospitalized` bigint, &#10;  `totaltestresults` bigint, &#10;  `lastmodified` string, &#10;  `recovered` string, &#10;  `total` bigint, &#10;  `posneg` bigint, &#10;  `deathincrease` bigint, &#10;  `hospitalizedincrease` bigint, &#10;  `negativeincrease` bigint, &#10;  `positiveincrease` bigint, &#10;  `totaltestresultsincrease` bigint, &#10;  `hash` string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="11" vertex="1">
+                    <mxGeometry y="30" width="270" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="rearc_usa_hospital_beds" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="940" width="240" height="390" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="`objectid` int, &#10;  `hospital_name` string, &#10;  `hospital_type` string, &#10;  `hq_address` string, &#10;  `hq_address1` string, &#10;  `hq_city` string, &#10;  `hq_state` string, &#10;  `hq_zip_code` string, &#10;  `county_name` string, &#10;  `state_name` string, &#10;  `state_fips` string, &#10;  `cnty_fips` string, &#10;  `fips` string, &#10;  `num_licensed_beds` int, &#10;  `num_staffed_beds` int, &#10;  `num_icu_beds` int, &#10;  `adult_icu_beds` int, &#10;  `pedi_icu_beds` double, &#10;  `bed_utilization` double, &#10;  `avg_ventilator_usage` double, &#10;  `potential_increase_in_bed_capac` int, &#10;  `latitude` double, &#10;  `longtitude` double" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="24" vertex="1">
+                    <mxGeometry y="30" width="240" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="rearc_covid_19_testing_data_us_total_latest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="1370" width="320" height="300" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="  `positive` bigint, &#10;  `negative` bigint, &#10;  `pending` bigint, &#10;  `hospitalizedcurrently` bigint, &#10;  `hospitalizedcumulative` bigint, &#10;  `inicucurrently` bigint, &#10;  `inicucumulative` bigint, &#10;  `onventilatorcurrently` bigint, &#10;  `onventilatorcumulative` bigint, &#10;  `recovered` bigint, &#10;  `hash` string, &#10;  `lastmodified` string, &#10;  `death` bigint, &#10;  `hospitalized` bigint, &#10;  `total` bigint, &#10;  `totaltestresults` bigint, &#10;  `posneg` bigint, &#10;  `notes` string" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="28" vertex="1">
+                    <mxGeometry y="30" width="320" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="static_data_countrypopulation" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="812.5" y="580" width="240" height="120" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value=" `id` string, &#10;  `id2` bigint, &#10;  `county` string, &#10;  `state` string, &#10;  `population estimate 2018` bigint" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="30" vertex="1">
+                    <mxGeometry y="30" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="static_data_countrycode" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="835" y="320" width="195" height="130" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="`country` string, &#10;  `alpha-2 code` string, &#10;  `alpha-3 code` string, &#10;  `numeric code` bigint, &#10;  `latitude` double, &#10;  `longitude` double" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="35" vertex="1">
+                    <mxGeometry y="30" width="195" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="static_data_states_abv" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+                    <mxGeometry x="817.5" y="800" width="230" height="70" as="geometry">
+                        <mxRectangle x="400" y="90" width="110" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="  `state` string,&#10;  `abbreviation` string&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontFamily=Comic Sans MS;" parent="40" vertex="1">
+                    <mxGeometry y="30" width="230" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="30" as="sourcePoint"/>
+                        <mxPoint x="460" y="30" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="285" as="sourcePoint"/>
+                        <mxPoint x="310" y="130.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="275" as="sourcePoint"/>
+                        <mxPoint x="835" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="40" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="285" as="sourcePoint"/>
+                        <mxPoint x="845" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="36" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="555" y="530" as="sourcePoint"/>
+                        <mxPoint x="870" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="285" as="sourcePoint"/>
+                        <mxPoint x="310" y="130.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="145" y="380" as="sourcePoint"/>
+                        <mxPoint x="200" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="10" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="900" as="sourcePoint"/>
+                        <mxPoint x="480" y="695" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="12" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="900" as="sourcePoint"/>
+                        <mxPoint x="480" y="695" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="12" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="750" y="695" as="sourcePoint"/>
+                        <mxPoint x="845" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="25" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="900" as="sourcePoint"/>
+                        <mxPoint x="480" y="695" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Comic Sans MS;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="36" target="25" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="250" as="sourcePoint"/>
+                        <mxPoint x="480" y="1150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
